@@ -5,6 +5,8 @@ const boton = document.getElementById('agregar')
 boton.addEventListener('click', function () {
     let listItem = document.createElement('li')
     listItem.innerText = prompt('Introduce un nuevo elemento a la lista:')
-    lista.appendChild(listItem)
-    lista.appendChild(document.createElement('hr'))
+    if(listItem.innerText !== ''){
+        lista.appendChild(listItem)
+        lista.appendChild(document.createElement('hr'))
+    }
 })
