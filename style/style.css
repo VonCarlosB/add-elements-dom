@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --primaryColor: white;
+    --font: 'Trebuchet MS';
+}
 html{
     background-color: black;
 }
@@ -9,7 +13,7 @@ body{
     width: 50%;
     height: 100vh;
     margin: auto;
-    background-color: snow;
+    background-color: var(--primaryColor);
     min-width: 600px;
     padding: 20px;
     display: flex;
@@ -19,6 +23,8 @@ body{
 h1{
     width: 100%;
     text-align: center;
+    font-family: var(--font);
+    margin-bottom: 20px;
 }
 ul{
     margin: 20px;
@@ -26,9 +32,21 @@ ul{
     width: 100%;
 }
 li{
+    width: 50%;
+    margin: auto;
+    height: 50px;
+    align-content: center;
     font-size: large;
     text-align: center;
     margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 227);
+    font-size: x-large;
+    font-family: var(--font);
+}
+li:hover{
+    background-color: lightgray;
+    font-weight: bold;
 }
 hr{
     margin-bottom: 10px;
@@ -40,4 +58,5 @@ button{
     color: blue;
     background-color: peachpuff;
     width: 200px;
+    font-family: var(--font);
 }
